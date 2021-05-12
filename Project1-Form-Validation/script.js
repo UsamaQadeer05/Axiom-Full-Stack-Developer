@@ -31,10 +31,32 @@ form.addEventListener("submit", function (e) {
   // Stop Page Reloading on Submit Btn
   e.preventDefault();
 
+  // Check to see if fields meet required field requirements
   // Check if Username input is empty
   if (username.value === "") {
     showError(username, "Username is Required");
   } else {
     showSuccess(username);
+  }
+
+  // Check if Email input is empty
+  if (email.value === "") {
+    showError(email, "Email is Required");
+  } else {
+    showSuccess(email);
+  }
+
+  // Check if Password input is empty
+  if (password.value === "") {
+    showError(password, "Password is Required");
+  } else {
+    showSuccess(password);
+  }
+
+  // Check if Password2 input is empty
+  if (password2.value === "") {
+    showError(password2, "Confirm password is Required");
+  } else {
+    showSuccess(password2);
   }
 });
