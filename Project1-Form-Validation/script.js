@@ -17,6 +17,14 @@ function showError(input, message) {
   small.innerText = message;
 }
 
+// Function to Update class for success
+function showSuccess(input) {
+  // Get the parent element of the input field(.form-control)
+  const formControl = input.parentElement;
+  // Override the class - add success
+  formControl.className = "form-control success";
+}
+
 // Event Listeners
 // Create Event Listener for Submit Button
 form.addEventListener("submit", function (e) {
@@ -26,5 +34,7 @@ form.addEventListener("submit", function (e) {
   // Check if Username input is empty
   if (username.value === "") {
     showError(username, "Username is Required");
+  } else {
+    showSuccess(username);
   }
 });
