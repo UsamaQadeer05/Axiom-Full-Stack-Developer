@@ -7,5 +7,7 @@ const password2 = document.getElementById("password2");
 
 // Create Event Listener for Submit Button
 form.addEventListener("submit", function (e) {
+    // Stop Page Reloading on Submit Btn
+    e.preventDefault();
   console.log("submitted");
 });
