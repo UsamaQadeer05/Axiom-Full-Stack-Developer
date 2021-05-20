@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  background-color: transparent;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+
+.currency input {
+  background-color: transparent;
+  text-align: right;
+  font-size: 24px;
+  border: 0;
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate {
+  font-size: 16px;
+  color: darkgreen;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
