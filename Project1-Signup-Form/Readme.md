@@ -1,4 +1,4 @@
-Project 1: HTML Form Validator
+Project 1: HTML Form Validator Using HTML, CSS & JS
 
 Project Requirements:
 - Create a HTML form with the following field
