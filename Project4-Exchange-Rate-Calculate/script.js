@@ -31,6 +31,8 @@ function calculate() {
       //   amountcurrencyTwo.value = (
       //     amountcurrencyOne.value * conversionRate
       //   ).toFixed(2);
+
+      // Formatting currency two amount
       amountcurrencyTwo.value = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: currencyTwoCode,
